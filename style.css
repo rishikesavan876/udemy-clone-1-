@@ -151,6 +151,6 @@ flex-basis: 25%;
     right: 0;
     display: none;
 }
-.mylearning:hover.mylearning--poppup{
+.mylearning:hover .mylearning--poppup{
     display: block;
 }
