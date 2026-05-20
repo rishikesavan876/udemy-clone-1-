@@ -1,15 +1,17 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
-body{
-    font-family: 'Gabarito',sans-serif;
+
+body {
+    font-family: 'Gabarito', sans-serif;
 }
-.navbar{
+
+.navbar {
     padding: 10px;
     display: flex;
-    justify-content:space-between ;
-    border-bottom:solid black 1px;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
     gap: 10px;
     align-items: center;
     position: sticky;
@@ -17,12 +19,14 @@ body{
     background-color: white;
     z-index: 1;
 }
-.navbar__s1__title{
+
+.navbar__s1__title {
     color: red;
 }
-.navbar__s2{
+
+.navbar__s2 {
     padding: 10px;
-    border:solid black 1px ;
+    border: solid black 1px;
     border-radius: 30px;
     width: 60%;
     display: flex;
@@ -30,37 +34,52 @@ body{
     align-items: center;
     background-color: transparent;
 }
-.navbar__s2 input{
+
+.navbar__s2 input {
     border: none;
     font-size: 16px;
     width: 100%;
-    
-}
-.navbar__s2 input:focus{
-    outline: none;
-}
-.navbar__s3{
-    display: flex;
-    gap: 10px;
-     align-items: center;
 
 }
-.categories{
+
+.navbar__s2 input:focus {
+    outline: none;
+}
+
+.navbar__s3 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.categories {
     display: flex;
     padding: 10px;
     border-bottom: solid black 1px;
     justify-content: space-around;
 }
-.categories p{
-    background-color:rgb(250, 35, 53);
+
+.categories p {
+    background-color: rgb(250, 35, 53);
     color: white;
     padding: 15px;
     border-radius: 30px;
+     border:solid black 1px;
+     cursor: pointer;
 }
-.sale-img{
+.categories p:hover{
+    transition: 1s;
+    background-color:transparent;
+    color: rgb(250, 35, 53);
+    border:solid black 1px;
+}
+
+.sale-img {
     position: relative;
 }
-.sale-img--2{
+
+.sale-img--2 {
     border: solid white 1px;
     padding: 2px;
     position: absolute;
@@ -69,88 +88,122 @@ body{
     background-color: rgb(250, 35, 53);
     color: white;
     left: 10px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
 }
 
 
 
-.sale-img img{
+.sale-img img {
     height: 100%;
     width: 100%;
 }
-.recommended__container{
+
+.recommended__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
 }
-.course-card{
+
+.course-card {
     width: 300px;
 }
-.course-card img{
+
+.course-card img {
     height: 150px;
     width: 100%;
 
 }
-.recommended{
+
+.recommended {
     padding: 10px;
 }
-.topics{
+
+.topics {
     padding: 10px;
 }
-.topics__container{
+
+.topics__container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
-    
+
 }
-.topics__container p{
-    border:solid black 2px;
+
+.topics__container p {
+    border: solid black 2px;
     padding: 10px;
-flex-grow: 1;
-flex-basis: 25%;
+    flex-grow: 1;
+    flex-basis: 25%;
 }
-.popular{
+
+.popular {
     padding: 10px;
 }
-.popular__container{
+
+.popular__container {
     display: flex;
     padding: 10px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.footer__one{
+
+.footer__one {
     display: flex;
     gap: 10px;
 }
-.footer{
+
+.footer {
     background: black;
     color: white;
     padding: 30px;
 }
-.footer__two{
-   display: flex;
+
+.footer__two {
+    display: flex;
     justify-content: space-between;
 }
-.footer__one__p{
+
+.footer__one__p {
     margin: 20px;
 }
-.footer__two{
+
+.footer__two {
     margin: 20px;
 }
-.mylearning{
+
+.mylearning {
     position: relative;
     cursor: pointer;
 }
-.mylearning--poppup{
+
+.mylearning--poppup {
     border: solid black 1px;
     background-color: white;
     position: absolute;
     top: 40px;
-    padding:    10px;
+    padding: 10px;
     right: 0;
     display: none;
 }
-.mylearning:hover .mylearning--poppup{
+
+.mylearning:hover .mylearning--poppup {
     display: block;
 }
